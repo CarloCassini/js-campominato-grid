@@ -11,6 +11,10 @@ function generaCella(container, i) {
   cella.classList.add("cella");
   cella.innerHTML = i;
 
+  cella.addEventListener("click", () => {
+    cella.classList.add("cella-cliccata");
+    console.log(cella.innerHTML);
+  });
   container.append(cella);
   console.log("test");
 }
